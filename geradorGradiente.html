@@ -1,0 +1,92 @@
+<link rel="stylesheet" href="./CSS/geradorGradiente.css">
+
+
+<div class="container-gradiente">
+  <div class="col1">
+    <div class="qtde_cores">
+
+      <button type="button" class="add_button">Adicionar cor</button>
+      <div class="posicoes">
+        <div class="classificacao-itens">
+          <p>Cor</p>
+          <p>Hexadecimal</p>
+          <p>Posição</p>
+          <p>Remover</p>
+        </div>
+        <div class="item-cor">
+          <input type="color" class="color-picker-input" value="#FF0000">
+          <input type="text" class="cor-hexadecimal" value="#FF0000">
+          <input type="text" class="posicao-atual" value="0%">
+          <button type='button' class="remove" onclick="">X</button>
+        </div>
+        <div class="item-cor">
+          <input type="color" class="color-picker-input" value="#000000">
+          <input type="text" class="cor-hexadecimal" value="#000000">
+          <input type="text" class="posicao-atual" value="100%">
+          <button type='button' class="remove" onclick="">X</button>
+        </div>
+
+      </div>
+      <div class="estilo-radial">
+        <button>Linear</button>
+        <button>Radial</button>
+      </div>
+      <div class="direcao-gradiente">
+        <H4>Direção do gradiente</H4>
+        <div class="container-direcoes">
+          <button data-graus="315"><img src="./Imagens/Seta.svg" class='up-left' alt=""></button>
+          <button data-graus="0"><img src="./Imagens/Seta.svg" class='up' alt=""></button>
+          <button data-graus="45"><img src="./Imagens/Seta.svg" class='up-right' alt=""></button>
+
+          <button data-graus="270"><img src="./Imagens/Seta.svg" class='left' alt=""></button>
+          <input type="text" class="angulo" value="180">
+          <button data-graus="90"><img src="./Imagens/Seta.svg" class='' alt=""></button>
+
+          <button data-graus="225"><img src="./Imagens/Seta.svg" class='bottom-left' alt=""></button>
+          <button data-graus="180"><img src="./Imagens/Seta.svg" class='bottom' alt=""></button>
+          <button data-graus="135"><img src="./Imagens/Seta.svg" class='bottom-right' alt=""></button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="col2">
+    <div class="gradiente-visualizacao">
+    </div>
+  </div>
+</div>
+<div class="container-css">
+  <h4>Código CSS</h4>
+  <div class="code-editor">
+    <div class="header">
+      <span class="title">CSS</span>
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="icon">
+        <g stroke-width="0" id="SVGRepo_bgCarrier"></g>
+        <g stroke-linejoin="round" stroke-linecap="round" id="SVGRepo_tracerCarrier"></g>
+        <g id="SVGRepo_iconCarrier">
+          <path stroke-linecap="round" stroke-width="2" stroke="#4C4F5A" d="M6 6L18 18"></path>
+          <path stroke-linecap="round" stroke-width="2" stroke="#4C4F5A" d="M18 6L6 18"></path>
+        </g>
+      </svg>
+    </div>
+    <div class="editor-content">
+      <code class="code">
+            <p class="property" id="prop-bg1">
+              <span class="color-2">background</span><span>:</span>
+              <span class="color-1">rgb(255, 0, 0)</span>;
+            </p>
+            <p class="property" id="prop-bg2">
+                <span class="color-2">background</span><span>:</span>
+                <span class="color-1">linear-gradient(180deg,rgb(255, 0, 0) 0%, rgb(0, 0, 0) 100%)</span>;
+              </p>
+            <p class="texto-puro">background: #FF0000;
+background: linear-gradient(bottom, #FF0000 0%, #000000 100%);
+            </p>
+          </code>
+    </div>
+  </div>
+
+  <script src="./JS/controladorGerador.js"></script>
+
+
+</div>

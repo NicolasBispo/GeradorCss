@@ -1,0 +1,32 @@
+@import url('./bases.css');
+
+body{
+    background-color: white !important;
+    
+}
+main{
+    background-color: white !important;
+}
+.ferramentas-css{
+    font-family: Roboto;    
+    margin: 20px 0px 0px 0px;
+}
+.ferramentas-css h4{
+    font-size: 30px;
+    text-align: center;
+    text-shadow: 0px 0px 2px #000000;
+}
+.ferramentas-css ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+.ferramentas-css ul li{
+    margin-left: 30px;
+}
+.ferramentas-css ul li a{
+    color: black !important;
+}
+#conteudo-exibir{
+    margin-top: 80px;
+}

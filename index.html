@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <script src="
+https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js
+"></script>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>EasyCSS</title>
+   <link rel="stylesheet" href="./CSS/index.css">
+   <script src="./JS/renderFunctions.js">
+   </script>
+   <script src="./JS/menuControler.js"></script>
+</head>
+
+<body>
+   <header>
+      <script>renderHeader();</script>
+   </header>
+   <main>
+      <nav class="ferramentas-css">
+         <h4>Geradores</h4>
+         <ul>
+            <li><a href="#" data-pagina="./geradorGradiente.html">Gradiente</a></li>
+            <li><a href="#" data-pagina="./geradorBorda.html">Borda</a></li>
+            <li><a href="#" data-pagina="./geradorBoxShadow.html">Sombra de bloco</a></li>
+         </ul>
+
+      </nav>
+      <section class="ferramenta-exibir">
+         <article id="conteudo-exibir">
+            <script>
+               $('#conteudo-exibir').load('./geradorGradiente.html');
+               //renderGerador();</script>
+         </article>
+      </section>
+
+
+
+   </main>
+
+
+</body>
+
+</html>
