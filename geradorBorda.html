@@ -1,1 +1,196 @@
-Bordaskkkkkkkkk
+<link rel="stylesheet" href="./CSS/geradorBorda.css">
+<div class="container-borda">
+    <div class="col1">
+        <div class="propriedade-borda-alterar">
+            <button id='borda' class="propriedade-botao-ativo">Borda</button>
+            <button id='border-radius'> Raio da borda</button>
+            <span class="border_bottom_text"></span>
+        </div>
+        <div class="nav-options">
+            <div class="container-propriedades">
+                <div id="propriedades-1">
+                    <div class="linha propriedade-linha">
+                        <label for="estiloBordaTotal">Estilo da borda</label>
+                        <select id="estiloBordaTotal" name="estiloBordaTotal">
+                            <option value="solid">solid</option>
+                            <option value="dotted">dotted</option>
+                            <option value="dashed">dashed</option>
+                            <option value="double">double</option>
+                            <option value="groove">groove</option>
+                            <option value="ridge">ridge</option>
+                            <option value="inset">inset</option>
+                            <option value="outset">outset</option>
+                            <option value="hidden">hidden</option>
+                            <option value="none">none</option>
+                        </select>
+                        <div class="input-group">
+                            <label for="input_cantos">Todos cantos</label>
+                            <input type="text" name="input_cantos" id="input_all_ranges" value="0">
+                        </div>
+                        <small id="mensagem_borda_1"></small>
+                        <input class='inputs_range' type="range" name="range_input" id="rangeinput_all" min="0"
+                            max="200" value="0">
+                    </div>
+                    <div class="divisao"></div>
+                    <div class="input-group-2">
+                        <label for="inputTodasBordas">Todas as bordas</label>
+                        <input type="checkbox" name="" id="inputTodasBordas" checked>
+                    </div>
+
+                    <div class="propriedades-separadas bordaSimples" id="propriedades-bordaSimples">
+                        <div class="propriedade-linha">
+                            <div class="input-group">
+                                <label for="bordaSuperior">Borda superior</label>
+                                <input type="text" name="bordaSuperior" id="bordaSuperior" value="0">
+                            </div>
+                            <div class="tipoBorda">
+                                <label for="estiloBordaSuperior">Estilo da borda</label>
+                                <select id="estiloBordaSuperior" name="estiloBordaTotal">
+                                    <option value="solid">solid</option>
+                                    <option value="dotted">dotted</option>
+                                    <option value="dashed">dashed</option>
+                                    <option value="double">double</option>
+                                    <option value="groove">groove</option>
+                                    <option value="ridge">ridge</option>
+                                    <option value="inset">inset</option>
+                                    <option value="outset">outset</option>
+                                    <option value="hidden">hidden</option>
+                                    <option value="none">none</option>
+                                </select>
+                            </div>
+
+                            <input class='inputs_range range-borda' type="range" name="range_input" id="rangeSuperior"
+                                min="0" max="200" value="0">
+                        </div>
+                        <div class="propriedade-linha">
+                            <div class="input-group">
+                                <label for="bordaEsquerda">Borda esquerda</label>
+                                <input type="text" name="bordaEsquerda" id="bordaEsquerda" value="0">
+                            </div>
+                            <div class="tipoBorda">
+                                <label for="estiloBordaEsquerda">Estilo da borda</label>
+                                <select id="estiloBordaEsquerda" name="estiloBordaTotal">
+                                    <option value="solid">solid</option>
+                                    <option value="dotted">dotted</option>
+                                    <option value="dashed">dashed</option>
+                                    <option value="double">double</option>
+                                    <option value="groove">groove</option>
+                                    <option value="ridge">ridge</option>
+                                    <option value="inset">inset</option>
+                                    <option value="outset">outset</option>
+                                    <option value="hidden">hidden</option>
+                                    <option value="none">none</option>
+                                </select>
+                            </div>
+                            <input class='inputs_range range-borda' type="range" name="range_input" id="rangeEsquerda"
+                                min="0" max="200" value="0">
+                        </div>
+                        <div class="propriedade-linha">
+                            <div class="input-group">
+                                <label for="bordaDireita">Borda direita</label>
+                                <input type="text" name="bordaDireita" id="bordaDireita" value="0">
+                            </div>
+                            <div class="tipoBorda">
+                                <label for="estiloBordaDireita">Estilo da borda</label>
+                                <select id="estiloBordaDireita" name="estiloBordaTotal">
+                                    <option value="solid">solid</option>
+                                    <option value="dotted">dotted</option>
+                                    <option value="dashed">dashed</option>
+                                    <option value="double">double</option>
+                                    <option value="groove">groove</option>
+                                    <option value="ridge">ridge</option>
+                                    <option value="inset">inset</option>
+                                    <option value="outset">outset</option>
+                                    <option value="hidden">hidden</option>
+                                    <option value="none">none</option>
+                                </select>
+                            </div>
+                            <input class='inputs_range range-borda' type="range" name="range_input" id="rangeDireita"
+                                min="0" max="200" value="0">
+                        </div>
+                        <div class="propriedade-linha">
+                            <div class="input-group">
+                                <label for="bordaInferior">Borda inferior</label>
+                                <input type="text" name="bordaInferior" id="bordaInferior" value="0">
+                            </div>
+                            <div class="tipoBorda">
+                                <label for="estiloBordaInferior">Estilo da borda</label>
+                                <select id="estiloBordaInferior" name="estiloBordaTotal">
+                                    <option value="solid">solid</option>
+                                    <option value="dotted">dotted</option>
+                                    <option value="dashed">dashed</option>
+                                    <option value="double">double</option>
+                                    <option value="groove">groove</option>
+                                    <option value="ridge">ridge</option>
+                                    <option value="inset">inset</option>
+                                    <option value="outset">outset</option>
+                                    <option value="hidden">hidden</option>
+                                    <option value="none">none</option>
+                                </select>
+                            </div>
+                            <input class='inputs_range range-borda' type="range" name="range_input" id="rangeInferior"
+                                min="0" max="200" value="0">
+                        </div>
+                    </div>
+                </div>
+                <div id="propriedades-2">
+                    <div class="linha propriedade-linha">
+                        <div class="input-group">
+                            <label for="input_cantos_borda">Todos cantos</label>
+                            <input type="text" name="input_cantos_borda" id="input_border_all" value="0">
+                        </div>
+                        <small id="mensagem_borda_radius_1"></small>
+                        <input class='inputs_range' type="range" name="range_input" id="rangeinput_all_border" min="0"
+                            max="200" value="0">
+                    </div>
+                    <div class="divisao"></div>
+                    <div class="input-group-2">
+                        <label for="inputTodasBorderRadius">Todas as bordas</label>
+                        <input type="checkbox" name="" id="inputTodasBorderRadius" checked>
+                    </div>
+
+                    <div class="propriedades-separadas" id="propriedades-borderRadius">
+                        <div class="propriedade-linha">
+                            <div class="input-group">
+                                <label for="bordaSuperiorR">Borda superior</label>
+                                <input type="text" name="bordaSuperiorR" id="bordaSuperiorR" value="0">
+                            </div>
+                            <input class='inputs_range range-borda' type="range" name="range_input" id="rangeSuperiorR"
+                                min="0" max="200" value="0">
+                        </div>
+                        <div class="propriedade-linha">
+                            <div class="input-group">
+                                <label for="bordaEsquerdaR">Borda esquerda</label>
+                                <input type="text" name="bordaEsquerdaR" id="bordaEsquerdaR" value="0">
+                            </div>
+                            <input class='inputs_range range-borda' type="range" name="range_input" id="rangeEsquerdaR"
+                                min="0" max="200" value="0">
+                        </div>
+                        <div class="propriedade-linha">
+                            <div class="input-group">
+                                <label for="bordaDireitaR">Borda direita</label>
+                                <input type="text" name="bordaDireitaR" id="bordaDireitaR" value="0">
+                            </div>
+                            <input class='inputs_range range-borda' type="range" name="range_input" id="rangeDireitaR"
+                                min="0" max="200" value="0">
+                        </div>
+                        <div class="propriedade-linha">
+                            <div class="input-group">
+                                <label for="bordaInferiorR">Borda inferior</label>
+                                <input type="text" name="bordaInferiorR" id="bordaInferiorR" value="0">
+                            </div>
+                            <input class='inputs_range range-borda' type="range" name="range_input" id="rangeInferiorR"
+                                min="0" max="200" value="0">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="col2">
+        <div class="visualizador-borda"></div>
+    </div>
+
+    <script src="./JS/controladorBorda.js"></script>
+</div>
