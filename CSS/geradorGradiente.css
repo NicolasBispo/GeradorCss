@@ -91,24 +91,50 @@
     outline: none;
     border: 0;
 }
-
-.cor-hexadecimal {
-    font-family: 'Roboto';
-    font-size: 20px;
-    width: 80px;
-    padding: 10px;
+.hexadecimal-div{
+    display: grid;
+    grid-template-columns: 30% 70%;
     border-radius: 5px;
     border: solid 1px black;
-    justify-self: center;
 }
-
-.posicao-atual {
-    font-family: 'Roboto';
-    font-size: 20px;
-    width: 50px;
-    padding: 10px;
-    border-radius: 5px;
+.porcentagem-div{
+    display: grid;
+    width: 70%;
+    grid-template-columns: 40% 60%;
+    justify-content: center;
     border: solid 1px black;
+    border-radius: 5px;
+}
+.hexadecimal-div  > *, .porcentagem-div > *{
+    padding: 10px 1px 10px 1px;
+}
+.simbolo-hexadecimal, .simbolo-porcentagem{
+    background-color: rgb(82, 82, 247);
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 900;
+    color: white;
+    grid-column: 1;
+}
+.cor-hexadecimal, .posicao-atual {
+    font-family: 'Roboto';
+    font-size: 20px;    
+    width: 100%;
+    justify-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-column: 2;
+    box-sizing: border-box;
+    outline: 0px;
+    border: 0px;
+    text-align: center;
+    padding: 0px 5px 0px 5px;
+}
+.cor-hexadecimal:focus{
+    outline: 0px;
+    border: 0px;
 }
 
 .container-css {
@@ -218,9 +244,10 @@
     border-radius: 10px;
     border: solid 1px black;
     font-size: 20px;
+    transition: all 0.2s ease;
 }
 .estilo-radial button:hover{
-    background-color: aquamarine;
+    background-color: yellow;
 }
 .estilo-radial button:nth-child(1){
     margin-right: 5px;
@@ -231,6 +258,7 @@
 .direcao-gradiente{
     margin-top: 25px;
     text-align: center;
+    
 }
 .direcao-gradiente button{
     display: flex;
@@ -318,6 +346,9 @@
 }
 .bottom-right{
     transform: rotate(45deg);
+}
+.tipoGradienteAtivo{
+    background-color: rgb(255, 238, 0);
 }
 @media (max-width: 768px) {
     .container-gradiente {
