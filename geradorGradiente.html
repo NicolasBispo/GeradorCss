@@ -15,20 +15,42 @@
         </div>
         <div class="item-cor">
           <input type="color" class="color-picker-input" value="#FF0000">
-          <input type="text" class="cor-hexadecimal" value="#FF0000">
-          <input type="text" class="posicao-atual" value="0%">
+          <div class="hexadecimal-div">
+            <div class="simbolo-hexadecimal">
+              <p>#</p>
+            </div>
+            <input type="text" class="cor-hexadecimal" value="FF0000">
+          </div>
+          <div class="porcentagem-div">
+            <div class="simbolo-porcentagem">
+              <p>%</p>
+            </div>
+            <input type="text" class="posicao-atual" value="0">
+          </div>
+
           <button type='button' class="remove" onclick="">X</button>
         </div>
         <div class="item-cor">
           <input type="color" class="color-picker-input" value="#000000">
-          <input type="text" class="cor-hexadecimal" value="#000000">
-          <input type="text" class="posicao-atual" value="100%">
+          <div class="hexadecimal-div">
+            <div class="simbolo-hexadecimal">
+              <p>#</p>
+            </div>
+            <input type="text" class="cor-hexadecimal" value="000000">
+          </div>
+          <div class="porcentagem-div">
+            <div class="simbolo-porcentagem">
+              <p>%</p>
+            </div>
+            <input type="text" class="posicao-atual" value="100">
+          </div>
+
           <button type='button' class="remove" onclick="">X</button>
         </div>
 
       </div>
       <div class="estilo-radial">
-        <button>Linear</button>
+        <button class="tipoGradienteAtivo">Linear</button>
         <button>Radial</button>
       </div>
       <div class="direcao-gradiente">
@@ -86,7 +108,7 @@ background: linear-gradient(bottom, #FF0000 0%, #000000 100%);
     </div>
   </div>
 
-  <script src="./JS/controladorGerador.js"></script>
+  <script src="./JS/controladorGradiente.js"></script>
 
 
 </div>
