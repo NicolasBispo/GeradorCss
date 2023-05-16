@@ -10,7 +10,20 @@
     padding-bottom: 300px;
     
 }
-
+.flexbox-container{
+    display: flex;
+    justify-content: space-evenly;
+    height: 50px;
+    align-items: center;
+}
+.flexbox-container *{
+    align-self: center;
+}
+.colorPickers{
+    outline: none;
+    border: 0;
+    height: 2.5rem;
+}
 .col1 {
     align-items: center;
 }
@@ -127,4 +140,25 @@
 .input-group-2 input {
     height: 20px;
     width: 20px;
+}
+.cssExibido{
+    background-color: rgb(87, 79, 100);
+    margin: 10px 5px 10px 5px;
+    padding: 10px;
+    border-radius: 10px;
+    height: 200px;
+    letter-spacing: 2px;
+    display: flex;
+    flex-direction: column;
+}
+.linha-css{
+    display: flex;
+    color: white;
+}
+.propriedade-css{
+    color: rgb(57, 192, 255);
+    padding-right: 2px;
+}
+.valores-css{
+    color: goldenrod;
 }
