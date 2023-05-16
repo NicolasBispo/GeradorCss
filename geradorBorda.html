@@ -10,25 +10,34 @@
             <div class="container-propriedades">
                 <div id="propriedades-1">
                     <div class="linha propriedade-linha">
-                        <label for="estiloBordaTotal">Estilo da borda</label>
-                        <select id="estiloBordaTotal" name="estiloBordaTotal">
-                            <option value="solid">solid</option>
-                            <option value="dotted">dotted</option>
-                            <option value="dashed">dashed</option>
-                            <option value="double">double</option>
-                            <option value="groove">groove</option>
-                            <option value="ridge">ridge</option>
-                            <option value="inset">inset</option>
-                            <option value="outset">outset</option>
-                            <option value="hidden">hidden</option>
-                            <option value="none">none</option>
-                        </select>
+                        <div class="flexbox-container">
+                            <div class="tipoBorda">
+                                <label for="estiloBordaTotal">Estilo da borda</label>
+                                <select id="estiloBordaTotal" name="estiloBordaTotal">
+                                    <option value="solid">solid</option>
+                                    <option value="dotted">dotted</option>
+                                    <option value="dashed">dashed</option>
+                                    <option value="double">double</option>
+                                    <option value="groove">groove</option>
+                                    <option value="ridge">ridge</option>
+                                    <option value="inset">inset</option>                                    
+                                    <option value="hidden">hidden</option>
+                                    <option value="none">none</option>
+                                </select>
+                            </div>
+                            <div class="corPick">
+                                <label for="corBorda">Cor da borda</label>
+                                <input class='colorPickers' type="color" name="corBorda" id="colorPickerAllBorders"
+                                    value="#FF0000">
+                            </div>
+                        </div>
+
                         <div class="input-group">
                             <label for="input_cantos">Todos cantos</label>
                             <input type="text" name="input_cantos" id="input_all_ranges" value="0">
                         </div>
                         <small id="mensagem_borda_1"></small>
-                        <input class='inputs_range' type="range" name="range_input" id="rangeinput_all" min="0"
+                        <input class='inputs_range' type="range" name="range_input" id="inputRangeBorderAll" min="0"
                             max="200" value="0">
                     </div>
                     <div class="divisao"></div>
@@ -43,20 +52,27 @@
                                 <label for="bordaSuperior">Borda superior</label>
                                 <input type="text" name="bordaSuperior" id="bordaSuperior" value="0">
                             </div>
-                            <div class="tipoBorda">
-                                <label for="estiloBordaSuperior">Estilo da borda</label>
-                                <select id="estiloBordaSuperior" name="estiloBordaTotal">
-                                    <option value="solid">solid</option>
-                                    <option value="dotted">dotted</option>
-                                    <option value="dashed">dashed</option>
-                                    <option value="double">double</option>
-                                    <option value="groove">groove</option>
-                                    <option value="ridge">ridge</option>
-                                    <option value="inset">inset</option>
-                                    <option value="outset">outset</option>
-                                    <option value="hidden">hidden</option>
-                                    <option value="none">none</option>
-                                </select>
+                            <div class="flexbox-container">
+                                <div class="tipoBorda">
+                                    <label for="estiloBordaSuperior">Estilo da borda</label>
+                                    <select id="estiloBordaSuperior" name="estiloBordaSuperior">
+                                        <option value="solid">solid</option>
+                                        <option value="dotted">dotted</option>
+                                        <option value="dashed">dashed</option>
+                                        <option value="double">double</option>
+                                        <option value="groove">groove</option>
+                                        <option value="ridge">ridge</option>
+                                        <option value="inset">inset</option>
+                                        
+                                        <option value="hidden">hidden</option>
+                                        <option value="none">none</option>
+                                    </select>
+                                </div>
+                                <div class="corPick">
+                                    <label for="corBorda">Cor da borda</label>
+                                    <input class='colorPickers' type="color" name="corBorda" id="colorSuperior"
+                                        value="#FF0000">
+                                </div>
                             </div>
 
                             <input class='inputs_range range-borda' type="range" name="range_input" id="rangeSuperior"
@@ -67,20 +83,29 @@
                                 <label for="bordaEsquerda">Borda esquerda</label>
                                 <input type="text" name="bordaEsquerda" id="bordaEsquerda" value="0">
                             </div>
-                            <div class="tipoBorda">
-                                <label for="estiloBordaEsquerda">Estilo da borda</label>
-                                <select id="estiloBordaEsquerda" name="estiloBordaTotal">
-                                    <option value="solid">solid</option>
-                                    <option value="dotted">dotted</option>
-                                    <option value="dashed">dashed</option>
-                                    <option value="double">double</option>
-                                    <option value="groove">groove</option>
-                                    <option value="ridge">ridge</option>
-                                    <option value="inset">inset</option>
-                                    <option value="outset">outset</option>
-                                    <option value="hidden">hidden</option>
-                                    <option value="none">none</option>
-                                </select>
+                            <div class="flexbox-container">
+
+
+                                <div class="tipoBorda">
+                                    <label for="estiloBordaEsquerda">Estilo da borda</label>
+                                    <select id="estiloBordaEsquerda" name="estiloBordaEsquerda">
+                                        <option value="solid">solid</option>
+                                        <option value="dotted">dotted</option>
+                                        <option value="dashed">dashed</option>
+                                        <option value="double">double</option>
+                                        <option value="groove">groove</option>
+                                        <option value="ridge">ridge</option>
+                                        <option value="inset">inset</option>
+                                        
+                                        <option value="hidden">hidden</option>
+                                        <option value="none">none</option>
+                                    </select>
+                                </div>
+                                <div class="corPick">
+                                    <label for="corBorda">Cor da borda</label>
+                                    <input class='colorPickers' type="color" name="corBorda" id="colorEsquerda"
+                                        value="#FF0000">
+                                </div>
                             </div>
                             <input class='inputs_range range-borda' type="range" name="range_input" id="rangeEsquerda"
                                 min="0" max="200" value="0">
@@ -90,20 +115,27 @@
                                 <label for="bordaDireita">Borda direita</label>
                                 <input type="text" name="bordaDireita" id="bordaDireita" value="0">
                             </div>
-                            <div class="tipoBorda">
-                                <label for="estiloBordaDireita">Estilo da borda</label>
-                                <select id="estiloBordaDireita" name="estiloBordaTotal">
-                                    <option value="solid">solid</option>
-                                    <option value="dotted">dotted</option>
-                                    <option value="dashed">dashed</option>
-                                    <option value="double">double</option>
-                                    <option value="groove">groove</option>
-                                    <option value="ridge">ridge</option>
-                                    <option value="inset">inset</option>
-                                    <option value="outset">outset</option>
-                                    <option value="hidden">hidden</option>
-                                    <option value="none">none</option>
-                                </select>
+                            <div class="flexbox-container">
+                                <div class="tipoBorda">
+                                    <label for="estiloBordaDireita">Estilo da borda</label>
+                                    <select id="estiloBordaDireita" name="estiloBordaDireita">
+                                        <option value="solid">solid</option>
+                                        <option value="dotted">dotted</option>
+                                        <option value="dashed">dashed</option>
+                                        <option value="double">double</option>
+                                        <option value="groove">groove</option>
+                                        <option value="ridge">ridge</option>
+                                        <option value="inset">inset</option>
+                                        
+                                        <option value="hidden">hidden</option>
+                                        <option value="none">none</option>
+                                    </select>
+                                </div>
+                                <div class="corPick">
+                                    <label for="corBorda">Cor da borda</label>
+                                    <input class='colorPickers' type="color" name="corBorda" id="colorDireita"
+                                        value="#FF0000">
+                                </div>
                             </div>
                             <input class='inputs_range range-borda' type="range" name="range_input" id="rangeDireita"
                                 min="0" max="200" value="0">
@@ -113,20 +145,27 @@
                                 <label for="bordaInferior">Borda inferior</label>
                                 <input type="text" name="bordaInferior" id="bordaInferior" value="0">
                             </div>
-                            <div class="tipoBorda">
-                                <label for="estiloBordaInferior">Estilo da borda</label>
-                                <select id="estiloBordaInferior" name="estiloBordaTotal">
-                                    <option value="solid">solid</option>
-                                    <option value="dotted">dotted</option>
-                                    <option value="dashed">dashed</option>
-                                    <option value="double">double</option>
-                                    <option value="groove">groove</option>
-                                    <option value="ridge">ridge</option>
-                                    <option value="inset">inset</option>
-                                    <option value="outset">outset</option>
-                                    <option value="hidden">hidden</option>
-                                    <option value="none">none</option>
-                                </select>
+                            <div class="flexbox-container">
+                                <div class="tipoBorda">
+                                    <label for="estiloBordaInferior">Estilo da borda</label>
+                                    <select id="estiloBordaInferior" name="estiloBordaInferior">
+                                        <option value="solid">solid</option>
+                                        <option value="dotted">dotted</option>
+                                        <option value="dashed">dashed</option>
+                                        <option value="double">double</option>
+                                        <option value="groove">groove</option>
+                                        <option value="ridge">ridge</option>
+                                        <option value="inset">inset</option>
+                                        
+                                        <option value="hidden">hidden</option>
+                                        <option value="none">none</option>
+                                    </select>
+                                </div>
+                                <div class="corPick">
+                                    <label for="corBorda">Cor da borda</label>
+                                    <input class='colorPickers' type="color" name="corBorda" id="colorInferior"
+                                        value="#FF0000">
+                                </div>
                             </div>
                             <input class='inputs_range range-borda' type="range" name="range_input" id="rangeInferior"
                                 min="0" max="200" value="0">
@@ -190,6 +229,10 @@
     </div>
     <div class="col2">
         <div class="visualizador-borda"></div>
+        <div class="cssExibido">
+            
+
+        </div>
     </div>
 
     <script src="./JS/controladorBorda.js"></script>
