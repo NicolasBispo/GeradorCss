@@ -16,30 +16,29 @@ https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js
 
 <body>
    <header>
-      <script>renderHeader();</script>
+      <script>
+      renderHeader();
+      $(document).ready(function(){
+         renderGerador();
+      })
+      
+      </script>
+      
    </header>
    <main>
-      <nav class="ferramentas-css">
-         <h4>Geradores</h4>
-         <ul>
-            <li><a href="#" data-pagina="./geradorGradiente.html">Gradiente</a></li>
-            <li><a href="#" data-pagina="./geradorBorda.html">Borda</a></li>
-            <li><a href="#" data-pagina="./geradorBoxShadow.html">Sombra de bloco</a></li>
-         </ul>
-
-      </nav>
+      
       <section class="ferramenta-exibir">
          <article id="conteudo-exibir">
             <script>
-               $('#conteudo-exibir').load('./geradorBorda.html');
-               //renderGerador();</script>
+               $('#conteudo-exibir').load("./geradorGradiente.html");
+            </script>
          </article>
       </section>
 
 
 
    </main>
-
+   
 
 </body>
 
