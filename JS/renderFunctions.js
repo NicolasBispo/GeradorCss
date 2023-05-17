@@ -3,7 +3,8 @@ function renderHeader() {
 }
 
 function renderGerador() {
-    $('.ferramentas-css ul li a').click(function (event) {
+    
+    $('.nav-itens li a').click(function (event) {
         event.preventDefault();
         let page = $(this).data('pagina');
         $('#conteudo-exibir').fadeOut(function () {
