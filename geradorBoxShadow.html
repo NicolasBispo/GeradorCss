@@ -1,1 +1,90 @@
-box shadowwwww
+<link rel="stylesheet" href="./CSS/geradorBoxShadow.css">
+<div class="container-boxshadow">
+    <div class="col">
+        <div class="container-propriedades">
+            <div class="input-group linha">
+                <div class="propriedade-input">
+                    <div class="prop-l1">
+                        <label for="inputProp">Tamanho horizontal</label>
+                        <input id='tamanhoHorizontal' value="10" type="text">
+                    </div>
+                    <input class='range_input' value="10" type="range" min="-200" max="200">
+                </div>
+                <div class="propriedade-input">
+                    <div class="prop-l1">
+                        <label for="inputProp">Tamanho vertical</label>
+                        <input id='tamanhoVertical' value="10" type="text">
+                    </div>
+                    <input class='range_input' value="10" type="range" min="-200" max="200">
+                </div>
+            </div>
+            <div class="input-group linha">
+                <div class="propriedade-input">
+                    <div class="prop-l1">
+                        <label for="inputProp">Nível de desfoque</label>
+                        <input id='nivelDesfoque' value="10" type="text">
+                    </div>
+                    <input class='range_input' value="10" type="range" min="0" max="200">
+                </div>
+                <div class="propriedade-input">
+                    <div class="prop-l1">
+                        <label for="inputProp">Raio de desfoque</label>
+                        <input id='raioDesfoque' value="10" type="text">
+                    </div>
+                    <input class='range_input' value="10" type="range" min="-200" max="200">
+                </div>
+            </div>
+            <div class="input-group linha">
+                <div class="propriedade-input">
+                    <div class="prop-l1">
+                        <label>
+                            Externa
+                            <input type="radio" name="opcao" value=" " checked>
+                            
+                        </label>
+                        <div class="divisoria">
+                            <div class="ld-tr"></div>
+                            <div class="ld-tr"></div>
+                            <div class="ld-tr"></div>
+                        </div>
+                        <label>
+                            <input type="radio" name="opcao" value="inset">
+                            Interna
+                        </label>
+                    </div>            
+                </div>
+                <div class="propriedade-input">
+                    <div class="prop-l1">
+                        <label for="inputProp">Cor da sombra</label>
+                        <input id='colorpick-shadow' type="color">
+                        <input id='textcolor-shadow' type="text">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="visualizador-boxshadow"></div>
+    </div>
+</div>
+<div class="container-css-exibir">
+    <div class="css-exibido">
+        <div class="propriedade-linha-css" id="prop-bx-1">
+            <code>
+                <span class="propriedade-css">-webkit-box-shadow</span>: <span class="valor-prop-css">10px 10px 10px 10px rgba(0,0,0,0.75)</span>;
+            </code>            
+        </div>
+        <div class="propriedade-linha-css" id="prop-bx-2">
+            <code>
+                <span class="propriedade-css">-moz-box-shadow</span>: <span class="valor-prop-css">10px 10px 10px 10px rgba(0,0,0,0.75)</span>;
+            </code>            
+        </div>
+        <div class="propriedade-linha-css" id="prop-bx-3">
+            <code>
+                <span class="propriedade-css">box-shadow</span>: <span class="valor-prop-css">10px 10px 10px 10px rgba(0,0,0,0.75)</span>;
+            </code>            
+        </div>
+    </div>
+    
+</div>
+<script src="./JS/controladorBoxShadow.js"></script>
