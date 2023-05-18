@@ -3,7 +3,7 @@ try {
     let inputTodasBordas = $('#input_all_ranges');
     let visualizador = $('.visualizador-borda');
     let estilo_borda = 'solid';
-    let corBordaTotal = 'red';
+    let corBordaTotal = '#CCCCCC';
 
 
     //Array que armazena os valores de border-radius para analise
