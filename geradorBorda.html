@@ -3,7 +3,7 @@
     <div class="col1">
         <div class="propriedade-borda-alterar">
             <button id='borda' class="propriedade-botao-ativo">Borda</button>
-            <button id='border-radius'> Raio da borda</button>
+            <button id='border-radius'>Raio da borda</button>
             <span class="border_bottom_text"></span>
         </div>
         <div class="nav-options">
@@ -25,17 +25,18 @@
                                     <option value="none">none</option>
                                 </select>
                             </div>
+                            <div class="input-group">
+                                <label for="input_cantos">Todos cantos</label>
+                                <input type="text" name="input_cantos" id="input_all_ranges" value="0">
+                            </div>
                             <div class="corPick">
                                 <label for="corBorda">Cor da borda</label>
                                 <input class='colorPickers' type="color" name="corBorda" id="colorPickerAllBorders"
-                                    value="#FF0000">
+                                    value="#CCCCCC">
                             </div>
                         </div>
 
-                        <div class="input-group">
-                            <label for="input_cantos">Todos cantos</label>
-                            <input type="text" name="input_cantos" id="input_all_ranges" value="0">
-                        </div>
+                        
                         <small id="mensagem_borda_1"></small>
                         <input class='inputs_range' type="range" name="range_input" id="inputRangeBorderAll" min="0"
                             max="200" value="0">
@@ -48,10 +49,7 @@
 
                     <div class="propriedades-separadas bordaSimples" id="propriedades-bordaSimples">
                         <div class="propriedade-linha">
-                            <div class="input-group">
-                                <label for="bordaSuperior">Borda superior</label>
-                                <input type="text" name="bordaSuperior" id="bordaSuperior" value="0">
-                            </div>
+                            
                             <div class="flexbox-container">
                                 <div class="tipoBorda">
                                     <label for="estiloBordaSuperior">Estilo da borda</label>
@@ -68,10 +66,14 @@
                                         <option value="none">none</option>
                                     </select>
                                 </div>
+                                <div class="input-group">
+                                    <label for="bordaSuperior">Borda superior</label>
+                                    <input type="text" name="bordaSuperior" id="bordaSuperior" value="0">
+                                </div>
                                 <div class="corPick">
                                     <label for="corBorda">Cor da borda</label>
                                     <input class='colorPickers' type="color" name="corBorda" id="colorSuperior"
-                                        value="#FF0000">
+                                        value="#CCCCCC">
                                 </div>
                             </div>
 
@@ -79,10 +81,7 @@
                                 min="0" max="200" value="0">
                         </div>
                         <div class="propriedade-linha">
-                            <div class="input-group">
-                                <label for="bordaEsquerda">Borda esquerda</label>
-                                <input type="text" name="bordaEsquerda" id="bordaEsquerda" value="0">
-                            </div>
+                            
                             <div class="flexbox-container">
 
 
@@ -101,20 +100,21 @@
                                         <option value="none">none</option>
                                     </select>
                                 </div>
+                                <div class="input-group">
+                                    <label for="bordaEsquerda">Borda esquerda</label>
+                                    <input type="text" name="bordaEsquerda" id="bordaEsquerda" value="0">
+                                </div>
                                 <div class="corPick">
                                     <label for="corBorda">Cor da borda</label>
                                     <input class='colorPickers' type="color" name="corBorda" id="colorEsquerda"
-                                        value="#FF0000">
+                                        value="#CCCCCC">
                                 </div>
                             </div>
                             <input class='inputs_range range-borda' type="range" name="range_input" id="rangeEsquerda"
                                 min="0" max="200" value="0">
                         </div>
                         <div class="propriedade-linha">
-                            <div class="input-group">
-                                <label for="bordaDireita">Borda direita</label>
-                                <input type="text" name="bordaDireita" id="bordaDireita" value="0">
-                            </div>
+                            
                             <div class="flexbox-container">
                                 <div class="tipoBorda">
                                     <label for="estiloBordaDireita">Estilo da borda</label>
@@ -131,20 +131,21 @@
                                         <option value="none">none</option>
                                     </select>
                                 </div>
+                                <div class="input-group">
+                                    <label for="bordaDireita">Borda direita</label>
+                                    <input type="text" name="bordaDireita" id="bordaDireita" value="0">
+                                </div>
                                 <div class="corPick">
                                     <label for="corBorda">Cor da borda</label>
                                     <input class='colorPickers' type="color" name="corBorda" id="colorDireita"
-                                        value="#FF0000">
+                                        value="#CCCCCC">
                                 </div>
                             </div>
                             <input class='inputs_range range-borda' type="range" name="range_input" id="rangeDireita"
                                 min="0" max="200" value="0">
                         </div>
                         <div class="propriedade-linha">
-                            <div class="input-group">
-                                <label for="bordaInferior">Borda inferior</label>
-                                <input type="text" name="bordaInferior" id="bordaInferior" value="0">
-                            </div>
+                            
                             <div class="flexbox-container">
                                 <div class="tipoBorda">
                                     <label for="estiloBordaInferior">Estilo da borda</label>
@@ -161,10 +162,14 @@
                                         <option value="none">none</option>
                                     </select>
                                 </div>
+                                <div class="input-group">
+                                    <label for="bordaInferior">Borda inferior</label>
+                                    <input type="text" name="bordaInferior" id="bordaInferior" value="0">
+                                </div>
                                 <div class="corPick">
                                     <label for="corBorda">Cor da borda</label>
                                     <input class='colorPickers' type="color" name="corBorda" id="colorInferior"
-                                        value="#FF0000">
+                                        value="#CCCCCC">
                                 </div>
                             </div>
                             <input class='inputs_range range-borda' type="range" name="range_input" id="rangeInferior"
