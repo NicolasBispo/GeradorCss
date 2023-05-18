@@ -1,0 +1,97 @@
+.container-boxshadow {
+    display: grid;
+    grid-template-columns: 45% 45%;
+    justify-content: center;
+}
+.col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.visualizador-boxshadow {
+    width: 50%;
+    height: 100%;
+    background-color: yellow;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.linha {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.propriedade-input {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    align-items: center;
+    margin: 1rem;
+}
+
+.prop-l1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.prop-l1>input {
+    margin-left: 1rem;
+    width: 4rem;
+    height: 2rem;
+}
+
+.range_input {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.divisoria {
+    display: flex;
+    flex-direction: column;
+    padding: 0 0.5rem 0 0.5rem;
+}
+
+.divisoria>div:nth-child(1) {
+    border-bottom: dotted 0.1rem black;
+    width: 1rem;
+}
+
+.divisoria>div:nth-child(3) {
+    border-top: dotted 0.1rem black;
+    width: 1rem;
+}
+
+.container-css-exibir {
+    display: grid;
+    grid-template-columns: 50%;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 1rem;
+    margin-left: 8rem;
+}
+
+.css-exibido {
+    width: 100%;
+    height: 3rem;
+    background-color: #2d2e4e;
+    padding: 2rem;
+    border-radius: 2rem;
+}
+
+.propriedade-linha-css {
+    display: flex;
+    color: white;
+    font-weight: 400 !important;
+}
+
+.propriedade-css {
+    color: rgb(158, 154, 154);
+    font-weight: 600 !important;
+}
+
+.valor-prop-css {
+    color: rgb(0, 195, 255);
+}
