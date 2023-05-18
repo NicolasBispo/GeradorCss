@@ -7,7 +7,7 @@
     grid-template-columns: 40% 40%;
     justify-content: center;
     column-gap: 10px;
-    padding-bottom: 300px;
+    padding-bottom: 10px;
     
 }
 .flexbox-container{
@@ -15,6 +15,7 @@
     justify-content: space-evenly;
     height: 50px;
     align-items: center;
+    
 }
 .flexbox-container *{
     align-self: center;
@@ -26,6 +27,29 @@
 }
 .col1 {
     align-items: center;
+}
+.col2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.copiar{
+    max-width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: flex-end;
+    margin-left: 90%;
+    padding: 0px 2px 0px 2px;
+    background-color: blueviolet;
+    border: 0px;
+    color: white;
+}
+.copiar:hover{
+    background-color: purple;
+}
+.copiar img{
+    width: 30px;
 }
 
 .propriedade-borda-alterar {
@@ -142,14 +166,16 @@
     width: 20px;
 }
 .cssExibido{
+    box-sizing: border-box;
     background-color: rgb(87, 79, 100);
-    margin: 10px 5px 10px 5px;
+    margin: 0px 5px 10px 5px;
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 10px 0px 10px 10px;
     height: 200px;
     letter-spacing: 2px;
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 .linha-css{
     display: flex;
