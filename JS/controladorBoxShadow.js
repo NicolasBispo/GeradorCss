@@ -10,7 +10,7 @@ try{
     nivelDesfoque = 10;
     raioDesfoque = 10;
     let tipoBoxShadow = $("input[name='opcao']:checked").val();
-    let corBoxShadow = "rgba(0, 0, 0, 0.75)"
+    let corBoxShadow = "#CCCCCC"
 
     function alterarParametros(tamanhoHorizontalNovo, tamanhoVerticalNovo, nivelDesfoqueNovo, raioDesfoqueNovo, tipoBoxShadowNovo, corBoxShadowNovo){
         let visualizador = $('.visualizador-boxshadow');

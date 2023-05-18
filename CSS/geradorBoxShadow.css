@@ -12,15 +12,17 @@
     width: 50%;
     height: 100%;
     background-color: yellow;
-    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px #CCCCCC;
+    -moz-box-shadow: 10px 10px 5px 0px #CCCCCC;
+    box-shadow: 10px 10px 5px 0px #CCCCCC;
 }
 
 .linha {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #FF5555;
+    box-shadow: 0px 0px 5px 3px #FF5555;
 }
 
 .propriedade-input {
@@ -29,6 +31,10 @@
     box-sizing: border-box;
     align-items: center;
     margin: 1rem;
+    color: white;
+    background-color: #990000;
+    padding: 0.3rem;
+    box-shadow: 0px 0px 4px 2px #990000;
 }
 
 .prop-l1 {
@@ -41,6 +47,12 @@
     margin-left: 1rem;
     width: 4rem;
     height: 2rem;
+    background-color: #222222;
+    box-sizing: border-box;
+    border: 2px solid white;
+    color: white;
+    border-radius: 3px;
+    text-align: center;
 }
 
 .range_input {
@@ -86,10 +98,39 @@
     color: white;
     font-weight: 400 !important;
 }
-
+.colorpick-shadow{
+    box-sizing: border-box;
+    background-color: #ffffff00 !important;
+    border: 0px;
+    outline: 0px;
+}
 .propriedade-css {
     color: rgb(158, 154, 154);
     font-weight: 600 !important;
+}
+.range_input {
+    margin-top: 5px;
+    -webkit-appearance: none;
+    height: 15px;
+    background-color: #222222;
+    border-radius: 5px;
+    outline: none;
+    overflow: hidden;
+}
+
+.range_input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 15px;
+    height:15px;
+    background-color: #FF5555;    
+    cursor: pointer;    
+}
+.range_input:disabled{
+    background-color: #5a5a5a;
+    cursor: not-allowed;
+}
+.range_input:disabled::-webkit-slider-thumb{
+    background-color: rgb(255, 183, 183) !important;
 }
 
 .valor-prop-css {
