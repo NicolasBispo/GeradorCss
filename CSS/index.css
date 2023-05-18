@@ -1,11 +1,11 @@
 @import url('./bases.css');
 
 body{
-    background-color: white !important;
+    background-color: #222222 !important;
     
 }
 main{
-    background-color: white !important;
+    background-color: #222222 !important;
 }
 .ferramentas-css{
     font-family: Roboto;    
@@ -28,5 +28,5 @@ main{
     color: black !important;
 }
 #conteudo-exibir{
-    margin-top: 80px;
+    margin-top: 1rem;
 }
