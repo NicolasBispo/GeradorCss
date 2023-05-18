@@ -87,6 +87,25 @@ try {
     editarValoresCssExibidos();
   };
 
+  function copiarCodigo(){
+    var texto = $('.editor-content .code').text().trim();
+
+        // Criar um elemento temporário para armazenar o texto formatado
+        var elementoTemporario = document.createElement('textarea');
+        elementoTemporario.value = texto;
+
+        // Adicionar o elemento temporário ao DOM
+        document.body.appendChild(elementoTemporario);
+
+        // Selecionar e copiar o texto formatado
+        elementoTemporario.select();
+        document.execCommand('copy');
+
+        // Remover o elemento temporário do DOM
+        document.body.removeChild(elementoTemporario);
+
+        console.log("Texto copiado para a área de transferência: " + texto);
+  }
   function hexToRgb(hex) {
     // Transforma o hex em um array com os valores correspondentes em decimal
     var r = parseInt(hex.substring(1, 3), 16);
