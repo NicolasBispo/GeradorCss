@@ -1,7 +1,7 @@
 
 <h1>GeradorCss - EasyCss</h1>
 
-<a href="http://www.nicolasbispo.github.io/GeradorCss/">Live preview</a>
+[LivePreview](linkedin.com/in/nicolas-bispo/)
 
 Bem-vindo ao Gerador de CSS! Um projeto pessoal criado para facilitar a criação de estilos personalizados para o seu site. Com essa ferramenta intuitiva, você pode gerar código CSS de forma simples e rápida, sem precisar escrever manualmente.
 
