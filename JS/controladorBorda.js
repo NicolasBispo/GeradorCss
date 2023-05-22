@@ -43,7 +43,7 @@ try {
     let colorDireita = $('#colorDireita');
     let colorInferior = $('#colorInferior');
 
-    let coresBordasSeparadas = new Array(4).fill('#FF0000');
+    let coresBordasSeparadas = new Array(4).fill('#CCCCCC');
 
     let regraCssTodasBordas = "";
 

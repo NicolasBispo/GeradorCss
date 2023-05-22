@@ -53,27 +53,7 @@
     align-items: center;
 }
 
-.copiar {
-    max-width: fit-content;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    align-self: flex-end;
-    margin-left: 90%;
-    padding: 4px;
-    background-color: blueviolet;
-    border: 0px;
-    color: white;
-    border-radius: 3px 3px 0px 0px;
-}
 
-.copiar:hover {
-    background-color: purple;
-}
-
-.copiar img {
-    width: 30px;
-}
 
 .propriedade-borda-alterar {
     display: grid;
@@ -236,13 +216,35 @@
     height: 20px;
     width: 20px;
 }
-
+.css-area{
+    width: 100%;
+    display: grid;
+    background-color: rgb(87, 79, 100);
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 1rem;
+}
+.copiar {
+    max-width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-self: flex-start;    
+    padding: 4px;
+    background-color: #22222200;
+    border: 0px;
+    color: white;
+    border-radius: 3px 3px 0px 0px;
+}
+.copiar:hover {
+    background-color: purple;
+}
+.copiar img {
+    width: 30px;
+}
 .cssExibido {
     box-sizing: border-box;
-    background-color: rgb(87, 79, 100);
-    margin: 0px 5px 10px 5px;
     padding: 10px;
-    border-radius: 10px 0px 10px 10px;
     height: 200px;
     letter-spacing: 2px;
     display: flex;
